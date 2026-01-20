@@ -25,7 +25,7 @@ type Offer struct {
 	DiskSpace   float64 `json:"disk_space"` // GB
 
 	// Status
-	Verified bool   `json:"verification,string"` // "verified" comes as string often, strictly checking API response type is safer if generic
+	Verified string `json:"verification"` // "verified" comes as string often, strictly checking API response type is safer if generic
 	Rented   bool   `json:"rented"`
 	Region   string `json:"geolocation"`
 }
